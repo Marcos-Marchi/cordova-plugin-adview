@@ -9,7 +9,7 @@
     <description>Ultimate Cordova Plugin for Google AdMobAdview and DFP to monetize hybrid apps. Show mobile Ad with single line of JavaScript. Compatible with Cordova CLI, PhoneGap Build, Intel XDK/Crosswalk, Google ChromeApp, Ionic, Meteor, etc.</description>
     <author>Marcos Marchi</author>
     <license>MIT</license>
-    <keywords>AdMobAdview,adview,google,ads</keywords>
+    <keywords>AdMobAdview,adview,google,ads,teste</keywords>
 
     <engines>
         <engine name="cordova-android" version="&gt;=3.5.0" />
