@@ -1,4 +1,4 @@
-package com.br1000apps.cordova.admobAdview;
+package com.rjfun.cordova.admobAdview;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -34,7 +34,7 @@ import java.lang.reflect.Method;
 import java.lang.NoSuchMethodException;
 import java.util.ArrayList;
 
-import com.br1000apps.cordova.ad.GenericAdPlugin;
+import com.rjfun.cordova.ad.GenericAdPlugin;
 
 public class AdMobAdviewPlugin extends GenericAdPlugin {
   private static final String LOGTAG = "AdMobAdviewPlugin";
