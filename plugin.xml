@@ -36,12 +36,12 @@
           
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AdMobAdview">
-                <param name="android-package" value="com.rjfun.cordova.AdMobAdview.AdMobAdviewPlugin"/>
+                <param name="android-package" value="com.1000apps.cordova.AdMobAdview.AdMobAdviewPlugin"/>
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-        <source-file src="src/android/AdMobAdviewMediation.java" target-dir="src/com/rjfun/cordova/AdMobAdview" />
-        <source-file src="src/android/AdMobAdviewPlugin.java" target-dir="src/com/rjfun/cordova/AdMobAdview" />
+        <source-file src="src/android/AdMobAdviewMediation.java" target-dir="src/com/1000apps/cordova/AdMobAdview" />
+        <source-file src="src/android/AdMobAdviewPlugin.java" target-dir="src/com/1000apps/cordova/AdMobAdview" />
 
         <!-- cordova CLI using gradle and it working well -->
         <framework src="com.google.android.gms:play-services-ads:+" />

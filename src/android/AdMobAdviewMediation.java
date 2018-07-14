@@ -1,4 +1,4 @@
-package com.rjfun.cordova.admobAdview;
+package com.1000apps.cordova.admobAdview;
 
 import org.json.JSONObject;
 import android.app.Activity;
