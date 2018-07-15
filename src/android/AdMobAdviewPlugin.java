@@ -76,7 +76,7 @@ public class AdMobAdviewPlugin extends GenericAdPlugin {
   private boolean mIsRewardedVideoLoading = false;
   private final Object mLock = new Object();
 
-  private HashMap<String, AdMobMediation> mediations = new HashMap<String, AdMobMediation>();
+  private HashMap<String, AdMobadviewMediation> mediations = new HashMap<String, AdMobadviewMediation>();
 
   @Override
   protected void pluginInitialize() {
@@ -367,7 +367,7 @@ protected void __showInterstitial(Object interstitial) {
     Iterator<String> it = mediations.keySet().iterator();
     while(it.hasNext()) {
       String key = it.next();
-      AdMobMediation m = mediations.get(key);
+      AdMobadviewMediation m = mediations.get(key);
       if(m != null) {
         builder = m.joinAdRequest(builder);
       }
