@@ -1,4 +1,4 @@
-package com.rjfun.cordova.admobAdview;
+package com.rjfun.cordova.admobadview;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -484,7 +484,7 @@ protected void __showInterstitial(Object interstitial) {
     Iterator<String> it = mediations.keySet().iterator();
     while(it.hasNext()) {
       String key = it.next();
-      AdMobMediation m = mediations.get(key);
+      AdMobadviewMediation m = mediations.get(key);
       if(m != null) m.onPause();
     }
 
@@ -497,7 +497,7 @@ protected void __showInterstitial(Object interstitial) {
     Iterator<String> it = mediations.keySet().iterator();
     while(it.hasNext()) {
       String key = it.next();
-      AdMobMediation m = mediations.get(key);
+      AdMobadviewMediation m = mediations.get(key);
       if(m != null) m.onResume();
     }
   }
@@ -507,7 +507,7 @@ protected void __showInterstitial(Object interstitial) {
     Iterator<String> it = mediations.keySet().iterator();
     while(it.hasNext()) {
       String key = it.next();
-      AdMobMediation m = mediations.get(key);
+      AdMobadviewMediation m = mediations.get(key);
       if(m != null) m.onDestroy();
     }
     super.onDestroy();
