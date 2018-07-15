@@ -1,4 +1,4 @@
-package com.rjfun.cordova.admobadview;
+package br.com.br1000apps;
 
 import java.util.HashMap;
 import java.util.Iterator;
