@@ -1,4 +1,4 @@
-package br.com.br1000apps;
+package br.com.br1000apps.AdMobAdview;
 
 import java.util.HashMap;
 import java.util.Iterator;

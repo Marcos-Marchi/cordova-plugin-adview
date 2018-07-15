@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-adview"
+        id="com.br.br1000apps.plugins.AdMobAdviewPlugin"
         version="1.0.0">
       
     <name>AdView Plugin</name>
@@ -36,11 +36,11 @@
           
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AdMobAdview">
-                <param name="android-package" value="com.br.br1000apps.plugins.AdMobAdviewPlugin"/>
+                <param name="android-package" value="com.br.br1000apps.plugins.AdMobAdviewPlugin.MyToast"/>
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-        <source-file src="src/android/AdMobAdviewPlugin.java" target-dir="src/com/br/br1000apps/plugins" />
+        <source-file src="src/android/AdMobAdviewPlugin.java" target-dir="src/com/br/br1000apps/plugins/AdMobAdviewPlugin" />
 
         <!-- cordova CLI using gradle and it working well -->
         <framework src="com.google.android.gms:play-services-ads:+" />
