@@ -39,7 +39,7 @@ import org.apache.cordova.CallbackContext;
 public class AdMobAdviewPlugin extends CordovaPlugin {
 
 @Override
-public boolean execute(String action, JSONArray args, CallbackContext callbackContext) 
+public boolean execute(String action, JSONArray args, CallbackContext callbackContext);
 
 @Override
 public boolean execute(String action, JSONArray args, CallbackContext callbackContext){
