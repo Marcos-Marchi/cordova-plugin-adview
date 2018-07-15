@@ -76,7 +76,7 @@ public class AdMobAdviewPlugin extends GenericAdPlugin {
   private boolean mIsRewardedVideoLoading = false;
   private final Object mLock = new Object();
 
-  private HashMap<String, AdMobadviewMediation> mediations = new HashMap<String, AdMobadviewMediation>();
+  private HashMap<String, AdMobadviewXXMediation> mediations = new HashMap<String, AdMobadviewXXMediation>();
 
   @Override
   protected void pluginInitialize() {
@@ -367,7 +367,7 @@ protected void __showInterstitial(Object interstitial) {
     Iterator<String> it = mediations.keySet().iterator();
     while(it.hasNext()) {
       String key = it.next();
-      AdMobadviewMediation m = mediations.get(key);
+      AdMobadviewXXMediation m = mediations.get(key);
       if(m != null) {
         builder = m.joinAdRequest(builder);
       }
@@ -484,7 +484,7 @@ protected void __showInterstitial(Object interstitial) {
     Iterator<String> it = mediations.keySet().iterator();
     while(it.hasNext()) {
       String key = it.next();
-      AdMobadviewMediation m = mediations.get(key);
+      AdMobadviewXXMediation m = mediations.get(key);
       if(m != null) m.onPause();
     }
 
@@ -497,7 +497,7 @@ protected void __showInterstitial(Object interstitial) {
     Iterator<String> it = mediations.keySet().iterator();
     while(it.hasNext()) {
       String key = it.next();
-      AdMobadviewMediation m = mediations.get(key);
+      AdMobadviewXXMediation m = mediations.get(key);
       if(m != null) m.onResume();
     }
   }
@@ -507,7 +507,7 @@ protected void __showInterstitial(Object interstitial) {
     Iterator<String> it = mediations.keySet().iterator();
     while(it.hasNext()) {
       String key = it.next();
-      AdMobadviewMediation m = mediations.get(key);
+      AdMobadviewXXMediation m = mediations.get(key);
       if(m != null) m.onDestroy();
     }
     super.onDestroy();
