@@ -370,7 +370,7 @@ protected void __showInterstitial(Object interstitial) {
     Iterator<String> it = mediations.keySet().iterator();
     while(it.hasNext()) {
       String key = it.next();
-      AdMobAdviewMediation m = mediations.get(key);
+      AdMobMediation m = mediations.get(key);
       if(m != null) {
         builder = m.joinAdRequest(builder);
       }
@@ -487,7 +487,7 @@ protected void __showInterstitial(Object interstitial) {
     Iterator<String> it = mediations.keySet().iterator();
     while(it.hasNext()) {
       String key = it.next();
-      AdMobAdviewMediation m = mediations.get(key);
+      AdMobMediation m = mediations.get(key);
       if(m != null) m.onPause();
     }
 
@@ -500,7 +500,7 @@ protected void __showInterstitial(Object interstitial) {
     Iterator<String> it = mediations.keySet().iterator();
     while(it.hasNext()) {
       String key = it.next();
-      AdMobAdviewMediation m = mediations.get(key);
+      AdMobMediation m = mediations.get(key);
       if(m != null) m.onResume();
     }
   }
@@ -510,7 +510,7 @@ protected void __showInterstitial(Object interstitial) {
     Iterator<String> it = mediations.keySet().iterator();
     while(it.hasNext()) {
       String key = it.next();
-      AdMobAdviewMediation m = mediations.get(key);
+      AdMobMediation m = mediations.get(key);
       if(m != null) m.onDestroy();
     }
     super.onDestroy();
