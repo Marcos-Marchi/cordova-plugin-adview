@@ -6,12 +6,12 @@ import org.json.JSONException;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.app.Activity;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
-public class AdMobAdviewPlugin extends FragmentActivity {
+public class AdMobAdviewPlugin extends Activity {
 
 	private AdView mAdView;
 
