@@ -36,7 +36,7 @@
           
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AdMobAdview">
-                <param name="android-package" value="com.br.br1000apps.plugins.AdMobAdviewPlugin.MyToast"/>
+                <param name="android-package" value="com.br.br1000apps.plugins.AdMobAdviewPlugin.Hello"/>
                 <param name="onload" value="true" />
             </feature>
         </config-file>

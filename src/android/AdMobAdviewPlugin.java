@@ -1,22 +1,26 @@
 package com.br.br1000apps.plugins.AdMobAdviewPlugin;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
+import org.apache.cordova.*;
+import org.json.JSONArray;
+import org.json.JSONException;
 
-public class MainActivity extends AppCompatActivity {
-    private AdView mAdView;
+public class Hello extends CordovaPlugin {
 
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    @Override
+    public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
 
-        MobileAds.initialize(this,
-            "ca-app-pub-3940256099942544~3347511713");
+        if (action.equals("greet")) {
 
-        mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+            String name = data.getString(0);
+            String message = "Hello, " + name;
+            callbackContext.success(message);
+
+            return true;
+
+        } else {
+            
+            return false;
+
+        }
     }
 }
