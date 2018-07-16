@@ -1,5 +1,20 @@
 package com.br.br1000apps.plugins.AdMobAdviewPlugin;
 
+import java.util.HashMap;
+import java.util.Iterator;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.location.Location;
+import android.os.Bundle;
+import android.provider.Settings;
+import android.util.Log;
+import android.view.View;
+
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
@@ -64,7 +79,7 @@ private static final String LOGTAG = "AdMobAdviewPlugin";
   private boolean mIsRewardedVideoLoading = false;
   private final Object mLock = new Object();
 
-  private HashMap<String, AdMobAdviewMediation> mediations = new HashMap<String, AdMobAdviewMediation>();
+
 
   @Override
   protected void pluginInitialize() {
