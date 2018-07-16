@@ -1,19 +1,49 @@
 package com.br.br1000apps.plugins.AdMobAdviewPlugin;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.*;
 
-public class MainActivity extends AppCompatActivity {
+  public class BannerExample extends Activity {
+  private AdView adView;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+  @Override
+  public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.main);
 
-        AdView mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-    }
-}
+    // Create the adView.
+    adView = new AdView(this);
+    adView.setAdUnitId(MY_AD_UNIT_ID);
+    adView.setAdSize(AdSize.BANNER);
+
+    // Lookup your LinearLayout assuming it's been given
+    // the attribute android:id="@+id/mainLayout".
+    LinearLayout layout = (LinearLayout)findViewById(R.id.mainLayout);
+
+    // Add the adView to it.
+    layout.addView(adView);
+
+    // Initiate a generic request.
+    AdRequest adRequest = new AdRequest.Builder().build();
+
+    // Load the adView with the ad request.
+    adView.loadAd(adRequest);
+  }
+
+  @Override
+  public void onPause() {
+    adView.pause();
+    super.onPause();
+  }
+
+  @Override
+  public void onResume() {
+    super.onResume();
+    adView.resume();
+  }
+
+  @Override
+  public void onDestroy() {
+    adView.destroy();
+    super.onDestroy();
+   }
+ }
