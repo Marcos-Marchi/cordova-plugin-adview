@@ -19,7 +19,10 @@ import java.lang.reflect.Method;
 import java.lang.NoSuchMethodException;
 import java.util.ArrayList;
 
-public class BannerExample extends Activity {
+import com.rjfun.cordova.ad.GenericAdPlugin;
+
+public class AdMobAdviewPlugin extends GenericAdPlugin {
+
   private AdView adView;
 
   @Override
