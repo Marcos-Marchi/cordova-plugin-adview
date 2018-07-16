@@ -79,7 +79,7 @@ private static final String LOGTAG = "AdMobAdviewPlugin";
   private boolean mIsRewardedVideoLoading = false;
   private final Object mLock = new Object();
 
-
+  private HashMap<String, AdMobMediation> mediations = new HashMap<String, AdMobMediation>();
 
   @Override
   protected void pluginInitialize() {
