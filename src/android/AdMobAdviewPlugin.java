@@ -7,7 +7,7 @@ import org.json.JSONException;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
-public class AdMobAdviewPlugin extends CordovaPlugin {
+public class AdMobAdviewPlugin extends CordovaActivty {
 
 	private AdView mAdView;
 
