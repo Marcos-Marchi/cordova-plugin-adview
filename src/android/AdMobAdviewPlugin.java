@@ -1,6 +1,5 @@
 package com.br.br1000apps.plugins.AdMobAdviewPlugin;
 
-import ...
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
