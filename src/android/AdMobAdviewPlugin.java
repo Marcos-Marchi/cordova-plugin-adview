@@ -6,17 +6,21 @@ import org.json.JSONException;
 
 import android.R;
 import android.os.Build;
-import android.os.Bundle;
+
+import android.annotation.SuppressLint;
 import android.app.Activity;
-
-import android.app.ListActivity;
-import android.content.Intent;
+import android.location.Location;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import java.util.ArrayList;
+import android.provider.Settings;
+import android.util.Log;
+import android.view.View;
 
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
 
 public class AdMobAdviewPlugin extends Activity {
 
@@ -24,7 +28,7 @@ public class AdMobAdviewPlugin extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.AdActivity);
+        setContentView(R.layout.activity_main);
 
         MobileAds.initialize(this,
             "ca-app-pub-3940256099942544~3347511713");
