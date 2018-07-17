@@ -30,7 +30,7 @@ public class AdMobAdviewPlugin extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.MainActivity);
 
         MobileAds.initialize(this,
             "ca-app-pub-3940256099942544~3347511713");
