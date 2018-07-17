@@ -33,7 +33,8 @@ public class AdMobAdviewPlugin extends Activity {
         MobileAds.initialize(this,
             "ca-app-pub-3940256099942544~3347511713");
 
-        mAdView = findViewById(R.id.adView);
+        /*mAdView = findViewById(R.id.adView);*/
+		mAdView = findViewById(getResources().getIdentifier("adview", "id", getPackageName()));
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
     }
