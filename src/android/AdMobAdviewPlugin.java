@@ -4,8 +4,8 @@ import org.apache.cordova.*;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import.R.layout;
-import.R.id; 
+import android.R.layout;
+import android.R.id; 
 import android.os.Build;
 import android.annotation.SuppressLint;
 import android.app.Activity;
