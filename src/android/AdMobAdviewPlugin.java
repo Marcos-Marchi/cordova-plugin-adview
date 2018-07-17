@@ -23,21 +23,7 @@ import com.google.android.gms.ads.MobileAds;
 
 public class AdMobAdviewPlugin extends Activity {
 
-	private AdView mAdView;
 
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        /*setContentView(R.layout.MainActivity);*/
-		setContentView(getResources().getIdentifier("MainActivity", "layout", getPackageName()));
-
-        MobileAds.initialize(this,
-            "ca-app-pub-3940256099942544~3347511713");
-
-        /*mAdView = findViewById(R.id.adView);*/
-		mAdView = findViewById(getResources().getIdentifier("adview", "id", getPackageName()));
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-    }
 	
 	
 }
