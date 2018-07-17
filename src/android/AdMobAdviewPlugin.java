@@ -15,7 +15,6 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 
-import com.google.android.gms.ads.R;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
